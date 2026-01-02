@@ -1,5 +1,6 @@
 import socket
 import time
+import sys
 from dnslib import DNSRecord, DNSHeader, QTYPE, RCODE
 from dns.cache import DNSCache
 from dns.policy import PolicyEngine
@@ -25,7 +26,11 @@ def run_dns_server():
     sock.settimeout(None)  # Keep blocking behavior but handle errors
     sock.bind(LISTEN_ADDR)
 
-    print(f"[+] DNS Proxy listening on {LISTEN_ADDR[0]}:{LISTEN_ADDR[1]}")
+    # print(f"[+] DNS Proxy listening on {LISTEN_ADDR[0]}:{LISTEN_ADDR[1]}")
+    print(
+        f"[+] DNS Proxy listening on {LISTEN_ADDR[0]}:{LISTEN_ADDR[1]}",
+        flush=True
+    )
 
     while True:
         data, client_addr = sock.recvfrom(4096)

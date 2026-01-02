@@ -2,3 +2,8 @@
 {"client_ip": "127.0.0.1", "domain": "google.com.", "qtype": "A", "category": "uncategorized", "decision": "ALLOW", "cache": "MISS", "latency_ms": 14.08, "timestamp": "2026-01-02T13:24:54Z"}
 {"client_ip": "127.0.0.1", "domain": "google.com.", "qtype": "A", "category": "uncategorized", "decision": "ALLOW", "cache": "HIT", "latency_ms": 0.8, "timestamp": "2026-01-02T13:25:09Z"}
 {"client_ip": "127.0.0.1", "domain": "facebook.com.", "qtype": "A", "category": "social_media", "decision": "ALLOW", "cache": "HIT", "latency_ms": 1.12, "timestamp": "2026-01-02T13:25:10Z"}
+{"client_ip": "127.0.0.1", "domain": "google.com.", "qtype": "A", "category": "uncategorized", "decision": "ALLOW", "cache": "MISS", "latency_ms": 36.9, "timestamp": "2026-01-02T13:31:33Z"}
+{"client_ip": "127.0.0.1", "domain": "facebook.com.", "qtype": "A", "category": "social_media", "decision": "BLOCK", "reason": "policy_denied", "cache": "NA", "latency_ms": 0, "timestamp": "2026-01-02T13:31:51Z"}
+{"client_ip": "172.19.0.1", "domain": "google.com.", "qtype": "A", "category": "uncategorized", "decision": "ALLOW", "cache": "MISS", "latency_ms": 629.08, "timestamp": "2026-01-02T14:01:21Z"}
+{"client_ip": "172.19.0.1", "domain": "facebook.com.", "qtype": "A", "category": "social_media", "decision": "BLOCK", "reason": "policy_denied", "cache": "NA", "latency_ms": 0, "timestamp": "2026-01-02T14:01:42Z"}
+{"client_ip": "172.19.0.1", "domain": "instagram.com.", "qtype": "A", "category": "social_media", "decision": "BLOCK", "reason": "policy_denied", "cache": "NA", "latency_ms": 0, "timestamp": "2026-01-02T14:03:34Z"}
