@@ -253,10 +253,3 @@ ping google.com
 
 ---
 
-## License
-
-[Add your license information here]
-
-## Contributing
-
-[Add contribution guidelines here]
