@@ -190,3 +190,15 @@
 {"client_ip": "172.19.0.1", "domain": "ext2.temp-mail.org.", "qtype": "HTTPS", "category": "uncategorized", "decision": "ALLOW", "cache": "HIT", "latency_ms": 0.6, "timestamp": "2026-01-02T20:10:52Z"}
 {"client_ip": "172.19.0.1", "domain": "ext2.temp-mail.org.", "qtype": "AAAA", "category": "uncategorized", "decision": "ALLOW", "cache": "HIT", "latency_ms": 0.36, "timestamp": "2026-01-02T20:10:52Z"}
 {"client_ip": "172.19.0.1", "domain": "ext2.temp-mail.org.", "qtype": "A", "category": "uncategorized", "decision": "ALLOW", "cache": "HIT", "latency_ms": 0.35, "timestamp": "2026-01-02T20:10:52Z"}
+{"client_ip": "172.19.0.1", "domain": "mobile.events.data.microsoft.com.", "qtype": "HTTPS", "category": "uncategorized", "decision": "ALLOW", "cache": "MISS", "latency_ms": 362.81, "timestamp": "2026-01-02T20:15:34Z"}
+{"client_ip": "172.19.0.1", "domain": "mobile.events.data.microsoft.com.", "qtype": "AAAA", "category": "uncategorized", "decision": "ALLOW", "cache": "MISS", "latency_ms": 204.25, "timestamp": "2026-01-02T20:15:34Z"}
+{"client_ip": "172.19.0.1", "domain": "mobile.events.data.microsoft.com.", "qtype": "A", "category": "uncategorized", "decision": "ALLOW", "cache": "MISS", "latency_ms": 205.09, "timestamp": "2026-01-02T20:15:34Z"}
+{"client_ip": "172.19.0.1", "domain": "mobile.events.data.microsoft.com.", "qtype": "HTTPS", "category": "uncategorized", "decision": "ALLOW", "cache": "HIT", "latency_ms": 1.37, "timestamp": "2026-01-02T20:15:36Z"}
+{"client_ip": "172.19.0.1", "domain": "mobile.events.data.microsoft.com.", "qtype": "AAAA", "category": "uncategorized", "decision": "ALLOW", "cache": "HIT", "latency_ms": 0.62, "timestamp": "2026-01-02T20:15:36Z"}
+{"client_ip": "172.19.0.1", "domain": "mobile.events.data.microsoft.com.", "qtype": "A", "category": "uncategorized", "decision": "ALLOW", "cache": "HIT", "latency_ms": 0.69, "timestamp": "2026-01-02T20:15:36Z"}
+{"client_ip": "172.19.0.1", "domain": "main.vscode-cdn.net.", "qtype": "HTTPS", "category": "uncategorized", "decision": "ALLOW", "cache": "MISS", "latency_ms": 52.56, "timestamp": "2026-01-02T20:15:38Z"}
+{"client_ip": "172.19.0.1", "domain": "main.vscode-cdn.net.", "qtype": "AAAA", "category": "uncategorized", "decision": "ALLOW", "cache": "MISS", "latency_ms": 125.55, "timestamp": "2026-01-02T20:15:38Z"}
+{"client_ip": "172.19.0.1", "domain": "main.vscode-cdn.net.", "qtype": "A", "category": "uncategorized", "decision": "ALLOW", "cache": "MISS", "latency_ms": 38.8, "timestamp": "2026-01-02T20:15:38Z"}
+{"client_ip": "172.19.0.1", "domain": "mobile.events.data.microsoft.com.", "qtype": "HTTPS", "category": "uncategorized", "decision": "ALLOW", "cache": "HIT", "latency_ms": 0.92, "timestamp": "2026-01-02T20:15:40Z"}
+{"client_ip": "172.19.0.1", "domain": "mobile.events.data.microsoft.com.", "qtype": "AAAA", "category": "uncategorized", "decision": "ALLOW", "cache": "HIT", "latency_ms": 0.46, "timestamp": "2026-01-02T20:15:40Z"}
+{"client_ip": "172.19.0.1", "domain": "mobile.events.data.microsoft.com.", "qtype": "A", "category": "uncategorized", "decision": "ALLOW", "cache": "HIT", "latency_ms": 0.42, "timestamp": "2026-01-02T20:15:40Z"}
