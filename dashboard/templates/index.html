@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DNS Admin Dashboard</title>
+</head>
+<body>
+<h2>DNS Policy Dashboard</h2>
+
+<table border="1">
+    <tr>
+        <th>Client Group</th>
+        <th>Category</th>
+        <th>Allowed</th>
+    </tr>
+    {% for p in policies %}
+    <tr>
+        <td>{{ p[0] }}</td>
+        <td>{{ p[1] }}</td>
+        <td>{{ "YES" if p[2] else "NO" }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<p>
+Edit policies using API:
+<pre>
+POST /policy
+{
+  "client_group": "default",
+  "category": "social_media",
+  "allowed": true
+}
+</pre>
+</p>
+
+</body>
+</html>

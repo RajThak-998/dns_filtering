@@ -15,7 +15,7 @@ COPY db ./db
 COPY logs ./logs
 
 # DNS uses UDP
-EXPOSE 5300/udp
+EXPOSE 53/udp
 
 # Run DNS server
 CMD ["python", "main.py"]

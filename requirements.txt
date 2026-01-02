@@ -1,1 +1,4 @@
 dnslib==0.9.26
+fastapi
+uvicorn
+jinja2

@@ -7,7 +7,7 @@ from dns.policy import PolicyEngine
 from dns.logger import DNSLogger
 
 UPSTREAM_DNS = ("8.8.8.8", 53)
-LISTEN_ADDR = ("0.0.0.0", 5300)
+LISTEN_ADDR = ("0.0.0.0", 53)
 
 policy_engine = PolicyEngine()
 logger = DNSLogger()
