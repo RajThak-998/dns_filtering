@@ -4,6 +4,11 @@ A Docker-based DNS filtering solution with policy management and real-time dashb
 
 ---
 
+## Architecture Diagram
+
+![DNS Filtering Architecture](architecture/image.png)
+
+
 ## Table of Contents
 
 - [Architecture Overview](#architecture-overview)
