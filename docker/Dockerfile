@@ -12,6 +12,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY dns ./dns
 COPY main.py .
 COPY db ./db
+COPY category_db ./category_db
 COPY logs ./logs
 
 # DNS uses UDP

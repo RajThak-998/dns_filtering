@@ -12,6 +12,7 @@ services:
       - NET_BIND_SERVICE
     volumes:
       - ./db:/app/db
+      - ./category_db:/app/category_db
       - ./logs:/app/logs
     restart: unless-stopped
 

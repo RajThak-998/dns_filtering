@@ -1,17 +1,22 @@
 import sqlite3
 
-DB_PATH = "db/policy.db"
+DB_PATH = "/app/db/policy.db"
+CAT_PATH = "/app/category_db/category.db"
 
 
 class PolicyEngine:
-    def __init__(self, db_path=DB_PATH):
+    def __init__(self, db_path=DB_PATH, cat_path=CAT_PATH):
         self.db_path = db_path
+        self.cat_path = cat_path
 
-    def _connect(self):
+    def _connect_policy(self):
         return sqlite3.connect(self.db_path)
 
+    def _connect_category(self):
+        return sqlite3.connect(self.cat_path)
+
     def get_client_group(self, client_ip):
-        conn = self._connect()
+        conn = self._connect_policy()
         cur = conn.cursor()
 
         cur.execute(
@@ -24,7 +29,8 @@ class PolicyEngine:
         return row[0] if row else "default"
 
     def get_domain_category(self, domain):
-        conn = self._connect()
+        # NOTE: category lookup must come from category DB, not policy DB
+        conn = self._connect_category()
         cur = conn.cursor()
 
         # longest suffix match
@@ -50,7 +56,7 @@ class PolicyEngine:
         if category == "uncategorized":
             return True, category
 
-        conn = self._connect()
+        conn = self._connect_policy()
         cur = conn.cursor()
 
         cur.execute(
