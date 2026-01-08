@@ -27,3 +27,24 @@ services:
       - ./db:/app/db
       - ./logs:/app/logs
     restart: unless-stopped
+
+  db:
+    image: postgres:16-alpine
+    container_name: dns_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: dns_filtering
+      POSTGRES_USER: dns_user
+      POSTGRES_PASSWORD: dns_pass
+    ports:
+     - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U dns_user -d dns_filtering"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  pgdata:

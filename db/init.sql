@@ -1,7 +1,7 @@
-CREATE TABLE IF NOT EXISTS domains (
-    domain TEXT PRIMARY KEY,
-    category TEXT NOT NULL
-);
+-- CREATE TABLE IF NOT EXISTS domains (
+--     domain TEXT PRIMARY KEY,
+--     category TEXT NOT NULL
+-- );
 
 CREATE TABLE IF NOT EXISTS policies (
     client_group TEXT,
