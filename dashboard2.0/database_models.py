@@ -29,7 +29,7 @@ class Policy(Base):
     client_group = Column(String, ForeignKey("groups.name", onupdate="CASCADE", ondelete="CASCADE"), primary_key=True)
     category = Column(String, ForeignKey("categories.name", onupdate="CASCADE", ondelete="RESTRICT"), primary_key=True)
     allowed = Column(Boolean, nullable=False)
-    __table_args__ = (CheckConstraint("allowed in (0,1)", name="allowed_check"),)
+    
 
     group = relationship("Group", back_populates="policies")
     category_rel = relationship("Category", back_populates="policies")
