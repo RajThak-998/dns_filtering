@@ -17,4 +17,4 @@ class Domains(BaseModel):
 class Policies(BaseModel):
     client_group: str
     category: str
-    allowed: int
+    allowed: bool
